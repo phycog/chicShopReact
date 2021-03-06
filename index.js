@@ -23,6 +23,7 @@ const db = mysql.createConnection({
   database: "chicshop_userdata",
 });
 
+/*
 db.connect(function(err){
   if (err){
       console.log('DB error');
@@ -30,7 +31,7 @@ db.connect(function(err){
       return false;
   }
 });
-
+*/
 const sessionStore = new MySQLStore({
   expiration : (1825*86400*1000),
   endConnectionOnClose: false
